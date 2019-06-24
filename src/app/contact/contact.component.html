@@ -8,14 +8,14 @@
   <h3><i>Shape your future web project with sharp design and refine coded functions.</i></h3>
   <br>
 Name:<br>
-<input type="text"placeholder="enter name" style="width: 90%; height: 5%">
+<input type="text"placeholder="enter name" style="width: 90%; height: 5%"[(ngModel)]="name">
 <br>
 <br>
 phone number:
-<input type="text"placeholder="enter number"style="width: 90%; height: 5%">
+<input type="text"placeholder="enter number"style="width: 90%; height: 5%"[(ngModel)]="phone">
 <br>
 <br>
-Email address:<input type="text"placeholder="enter email"style="width: 90%; height: 5%">
+Email address:<input type="text"placeholder="enter email"style="width: 90%; height: 5%"[(ngModel)]="email">
 <br>
 <br>
 <label>Subject</label>
@@ -30,13 +30,13 @@ Email address:<input type="text"placeholder="enter email"style="width: 90%; heig
 <br>
 Message:
 <br>
-<textarea style="width: 90%; height: 15%">Message</textarea>
+<textarea style="width: 90%; height: 15%"[(ngModel)]="message"></textarea>
 
 
 &nbsp;
 <br>
 <br>
-<button><b>SEND</b></button>
+<button (click)="send()"><b>SEND</b></button>
 </form>
 </div>
 </body>

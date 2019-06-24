@@ -1,3 +1,4 @@
+import {FormsModule} from '@angular/forms'
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
